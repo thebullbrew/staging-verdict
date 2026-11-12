@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Staging Verdict — Stage It or Skip It?</title>
+<meta name="description" content="Price staging honestly: furniture bill vs price lift and days of carrying cost saved. Break-even premium, break-even days, and one plain verdict for sellers.">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0E1A11">
+<link rel="icon" href="icons/icon-32.png">
+<style>
+:root{--bg:#0E1A11;--surface:#16241A;--surface2:#1E2F22;--text:#F0EBDC;--muted:#B9B39E;--accent:#B49A5B;--accent2:#8A5A33;--line:#8A5A33;--good:#D4C47A;--bad:#D98A7A}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.5}
+.wrap{max-width:1060px;margin:0 auto;padding:28px 18px 60px}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-size:.72rem;text-align:center}
+h1{font-size:clamp(2.1rem,5vw,3.5rem);text-align:center;margin:.2em 0 .1em;font-weight:900;letter-spacing:.01em}
+.sub{text-align:center;color:var(--muted);font-style:italic;max-width:700px;margin:0 auto 26px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:820px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1.5px dashed var(--accent2);border-radius:6px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.card h2{margin:0 0 6px;font-size:1.18rem;color:var(--accent);letter-spacing:.03em}
+.card h2::before{content:"❦ ";color:var(--accent2)}
+.card p.hint{color:var(--muted);font-size:.86rem;margin:0 0 14px}
+label{display:block;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:12px 0 4px}
+input,select{width:100%;background:#0B140D;border:1px solid #3A4A3A;color:var(--text);border-radius:6px;padding:10px 12px;font-size:1rem;font-family:inherit}
+input:focus{outline:2px solid var(--accent);border-color:transparent}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hero{grid-column:1/-1;text-align:center;padding:30px 20px;border:2px dashed var(--accent)}
+.seal{display:inline-flex;align-items:center;justify-content:center;width:162px;height:162px;border-radius:50%;border:3px double var(--accent);background:radial-gradient(circle at 35% 30%,#2A3D2A,#16241A 72%);color:var(--accent);font-weight:900;letter-spacing:.07em;text-align:center;padding:14px;font-size:1.05rem;box-shadow:0 8px 24px rgba(0,0,0,.55);margin:8px auto;line-height:1.2}
+.bignum{font-size:clamp(2.1rem,6vw,3.4rem);color:var(--accent);font-weight:900;line-height:1.1}
+.hero p{color:var(--muted);max-width:660px;margin:10px auto 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
+.stat{background:var(--surface2);border:1px dashed var(--accent2);border-radius:6px;padding:12px}
+.stat b{display:block;font-size:1.28rem;color:var(--accent);font-weight:900} .stat span{font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{padding:8px 6px;border-bottom:1px solid #2E402F;text-align:right}th:first-child,td:first-child{text-align:left}th{color:var(--accent);text-transform:uppercase;font-size:.72rem;letter-spacing:.08em}
+tr.hl td{color:var(--accent);font-weight:bold}
+.bar{display:flex;height:26px;border-radius:4px;overflow:hidden;border:1px solid var(--accent2);margin:10px 0}
+.bar div{display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#0E1A11;font-weight:bold;min-width:0;overflow:hidden;white-space:nowrap}
+button{background:var(--accent2);color:#F0EBDC;border:none;border-radius:6px;padding:11px 16px;font-family:inherit;font-weight:bold;cursor:pointer;font-size:.95rem}
+button.primary{background:var(--accent);color:#0E1A11}
+button.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+button:hover{filter:brightness(1.12)}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.presets{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
+.presets button{background:transparent;color:var(--text);border:1.5px dashed var(--accent2);font-weight:normal}
+.saved{font-size:.9rem;color:var(--muted)} .saved li{margin:6px 0}
+footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:30px;font-style:italic}
+.pos{color:var(--good)} .neg{color:var(--bad)}
+.orn{text-align:center;color:var(--accent2);letter-spacing:.6em;margin:4px 0}
+</style></head><body><div class="wrap">
+<div class="eyebrow">◆ The Bull Brew · Daily Tool ◆</div>
+<h1>❦ The Staging Verdict ❦</h1>
+<p class="sub">The stager wants $4,000 and a monthly rental. Your agent swears it "always pays." Maybe. Price the furniture against the only two things staging can actually buy you — a higher price and fewer days bleeding carrying costs — and get one honest verdict.</p>
+<div class="presets">
+<button data-preset="vacant">Vacant Suburban</button>
+<button data-preset="luxury">Luxury Listing</button>
+<button data-preset="condo">Small Condo</button>
+<button data-preset="hot">Hot Market</button>
+</div>
+<div class="grid">
+<section class="card hero">
+<div class="eyebrow">The Verdict</div>
+<div class="seal" id="seal">—</div>
+<div class="bignum" id="netBig">$0</div>
+<p id="verdictText">Enter your numbers.</p>
+<div class="stats">
+<div class="stat"><b id="liftStat">$0</b><span>Price lift after commission</span></div>
+<div class="stat"><b id="carryStat">$0</b><span>Carrying saved</span></div>
+<div class="stat"><b id="stageCostStat">$0</b><span>Total staging bill</span></div>
+<div class="stat"><b id="bePremium">0%</b><span>Break-even premium</span></div>
+<div class="stat"><b id="beDays">—</b><span>Break-even days saved</span></div>
+<div class="stat"><b id="roiStat">0%</b><span>Return on staging $</span></div>
+</div>
+</section>
+
+<section class="card"><h2>The House &amp; The Bleed</h2><p class="hint">What the house is worth — and what every extra week on market costs you.</p>
+<label>List price ($)</label><input id="price" type="number" value="425000">
+<label>Monthly carrying cost ($/mo)</label><input id="carry" type="number" value="2850">
+<p class="hint">Mortgage, taxes, insurance, utilities, lawn — the full monthly bleed while it sits.</p>
+<label>Selling commission (%)</label><input id="commission" type="number" value="5.5" step="0.1">
+<p class="hint">Commission is charged on the lift too. A $7,650 lift is not $7,650 in your pocket.</p>
+</section>
+
+<section class="card"><h2>The Two Timelines</h2><p class="hint">Be honest. Stagers sell the best case; underwrite the likely one.</p>
+<div class="row">
+<div><label>Days on market — unstaged</label><input id="domUnstaged" type="number" value="58"></div>
+<div><label>Days on market — staged</label><input id="domStaged" type="number" value="31"></div>
+</div>
+<label>Expected price premium from staging (%)</label><input id="premium" type="number" value="1.8" step="0.1">
+<p class="hint">Industry studies claim 1–3% for well-staged homes in normal markets. In a bidding-war market it can be near zero — the house was selling anyway.</p>
+<div class="stats"><div class="stat"><b id="daysSavedStat">0 days</b><span>Days saved by staging</span></div></div>
+</section>
+
+<section class="card"><h2>The Staging Bill</h2><p class="hint">Get the real quote. Delivery, pickup and the monthly furniture rental all count.</p>
+<label>Upfront staging fee ($)</label><input id="upfront" type="number" value="3800">
+<label>Furniture rental ($/mo)</label><input id="monthlyStage" type="number" value="650">
+<p class="hint">The rental runs for the whole staged timeline — a slow sale rents the sofa again every month.</p>
+<div class="stats">
+<div class="stat"><b id="upfrontStat">$0</b><span>Upfront</span></div>
+<div class="stat"><b id="rentalStat">$0</b><span>Rental over sale</span></div>
+</div>
+</section>
+
+<section class="card"><h2>Money Anatomy</h2><p class="hint">Where the staged sale's edge comes from — and what eats it.</p>
+<div class="bar" id="anatomy"></div>
+<div id="anatomyText" class="saved"></div>
+<div class="orn">◆ ◆ ◆</div>
+<p class="hint" style="margin-top:10px">Net = (price lift − commission on that lift) + carrying saved − total staging bill. If the lift is a guess, the verdict is only as good as the guess — check the sensitivity tables before you sign.</p>
+</section>
+
+<section class="card"><h2>Premium Sensitivity</h2><p class="hint">If the lift is smaller than promised, does it still pay?</p>
+<table><thead><tr><th>Premium</th><th>Lift after comm.</th><th>Net benefit</th></tr></thead><tbody id="premiumTable"></tbody></table>
+</section>
+
+<section class="card"><h2>Speed Sensitivity</h2><p class="hint">If staged does not actually sell faster, the math thins out fast.</p>
+<table><thead><tr><th>Staged DOM</th><th>Days saved</th><th>Staging bill</th><th>Net benefit</th></tr></thead><tbody id="domTable"></tbody></table>
+<div class="btnrow">
+<button class="primary" id="saveBtn">Save this case</button>
+<button class="ghost" id="copyBtn">Copy summary</button>
+</div>
+<ul class="saved" id="savedList"></ul>
+</section>
+</div>
+<footer>Education, not advice. Premium and days-saved are estimates — ask your agent for staged-vs-unstaged comps on your own street before you spend a dollar.</footer>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const fmt=n=>{const s=n<0?'-':'';return s+'$'+Math.abs(Math.round(n)).toLocaleString('en-US');};
+const pct=n=>(Math.round(n*100)/100).toFixed(2).replace(/\.?0+$/,'')+'%';
+const ids=['price','carry','commission','domUnstaged','domStaged','premium','upfront','monthlyStage'];
+function vals(){const o={};ids.forEach(i=>o[i]=parseFloat($(i).value)||0);return o;}
+function calc(v,premiumOverride,domStagedOverride){
+  const premium=premiumOverride!==undefined?premiumOverride:v.premium;
+  const domS=domStagedOverride!==undefined?domStagedOverride:v.domStaged;
+  const liftGross=v.price*premium/100;
+  const liftNet=liftGross*(1-v.commission/100);
+  const daysSaved=Math.max(0,v.domUnstaged-domS);
+  const carrySaved=daysSaved/30*v.carry;
+  const rental=v.monthlyStage*(domS/30);
+  const stageTotal=v.upfront+rental;
+  const net=liftNet+carrySaved-stageTotal;
+  return {liftGross,liftNet,daysSaved,carrySaved,rental,stageTotal,net,domS};
+}
+function render(){
+  const v=vals();const r=calc(v);
+  $('liftStat').textContent=fmt(r.liftNet);
+  $('carryStat').textContent=fmt(r.carrySaved);
+  $('stageCostStat').textContent=fmt(r.stageTotal);
+  $('daysSavedStat').textContent=r.daysSaved+' days';
+  $('upfrontStat').textContent=fmt(v.upfront);
+  $('rentalStat').textContent=fmt(r.rental);
+  $('roiStat').textContent=r.stageTotal>0?pct(r.net/r.stageTotal*100):'—';
+  // break-even premium: solve liftNet + carrySaved - stageTotal = 0
+  const bePrem=v.price>0?Math.max(0,(r.stageTotal-r.carrySaved)/(v.price*(1-v.commission/100))*100):0;
+  $('bePremium').textContent=pct(bePrem);
+  // break-even days saved: days needed at current premium
+  let beDaysTxt='Already covered';
+  if(r.liftNet<r.stageTotal){
+    if(v.carry>0){const need=Math.ceil((r.stageTotal-r.liftNet)/(v.carry/30));beDaysTxt=need+' days';}
+    else beDaysTxt='Never';
+  }
+  $('beDays').textContent=beDaysTxt;
+  let seal,txt;
+  if(r.net>=5000){seal='STAGE IT';txt='Stage it — and stage it properly. On these numbers staging returns '+fmt(r.net)+' after every cost, including commission on the lift. Half-measures do not buy a premium; a finished look does.';}
+  else if(r.net>0){seal='STAGE LIGHT';txt='It pays, but thinly — '+fmt(r.net)+' of net edge. Stage the living room, kitchen and primary bedroom, skip the rest, and negotiate the rental term before you sign.';}
+  else if(r.net>=-1500){seal='CLOSE CALL';txt='This is a coin flip worth '+fmt(r.net)+'. It only works if the premium and the speed are both real. Demand staged-vs-unstaged comps from your agent, or declutter and deep-clean instead for a tenth of the price.';}
+  else{seal='SKIP IT';txt='Skip the furniture. Staging loses '+fmt(Math.abs(r.net))+' on these numbers — the lift and the saved days do not cover the bill. Spend on price, photos and repairs buyers can actually see in an inspection.';}
+  $('seal').textContent=seal;
+  $('netBig').textContent=(r.net>=0?'+':'')+fmt(r.net)+' net';
+  $('netBig').className='bignum '+(r.net>=0?'pos':'neg');
+  $('verdictText').textContent=txt;
+  // anatomy bar: liftNet, carrySaved vs stageTotal — show gains composition
+  const gains=Math.max(1,r.liftNet+r.carrySaved);
+  const lp=Math.max(0,r.liftNet)/gains*100, cp=Math.max(0,r.carrySaved)/gains*100;
+  $('anatomy').innerHTML='<div style="background:#B49A5B;width:'+lp+'%">Lift '+fmt(r.liftNet)+'</div><div style="background:#8A5A33;color:#F0EBDC;width:'+cp+'%">Carry saved '+fmt(r.carrySaved)+'</div>';
+  $('anatomyText').innerHTML='Gross lift '+fmt(r.liftGross)+' → '+fmt(r.liftNet)+' after '+v.commission+'% commission. Total gains '+fmt(r.liftNet+r.carrySaved)+' vs staging bill '+fmt(r.stageTotal)+' (upfront '+fmt(v.upfront)+' + rental '+fmt(r.rental)+'). Break-even premium: '+pct(bePrem)+' — below that, staging is decoration, not investment.';
+  // premium table
+  const premiums=[0,0.5,1,1.5,2,3,4,5];
+  $('premiumTable').innerHTML=premiums.map(p=>{const x=calc(v,p);const hl=Math.abs(p-v.premium)<0.01?' class="hl"':'';return '<tr'+hl+'><td>'+pct(p)+'</td><td>'+fmt(x.liftNet)+'</td><td class="'+(x.net>=0?'pos':'neg')+'">'+fmt(x.net)+'</td></tr>';}).join('');
+  // dom table
+  const doms=[14,21,31,45,58];
+  const uniq=[...new Set([...doms,Math.round(v.domStaged)])].sort((a,b)=>a-b);
+  $('domTable').innerHTML=uniq.map(d=>{const x=calc(v,undefined,d);const hl=d===Math.round(v.domStaged)?' class="hl"':'';return '<tr'+hl+'><td>'+d+' days</td><td>'+x.daysSaved+'</td><td>'+fmt(x.stageTotal)+'</td><td class="'+(x.net>=0?'pos':'neg')+'">'+fmt(x.net)+'</td></tr>';}).join('');
+}
+ids.forEach(i=>$(i).addEventListener('input',render));
+const presets={
+ vacant:{price:425000,carry:2850,commission:5.5,domUnstaged:58,domStaged:31,premium:1.8,upfront:3800,monthlyStage:650},
+ luxury:{price:925000,carry:5400,commission:5.5,domUnstaged:74,domStaged:38,premium:2.5,upfront:9500,monthlyStage:1800},
+ condo:{price:265000,carry:1750,commission:6,domUnstaged:49,domStaged:29,premium:1.2,upfront:2200,monthlyStage:400},
+ hot:{price:550000,carry:3100,commission:5,domUnstaged:18,domStaged:12,premium:0.6,upfront:4200,monthlyStage:700}
+};
+document.querySelectorAll('[data-preset]').forEach(b=>b.addEventListener('click',()=>{const p=presets[b.dataset.preset];ids.forEach(i=>$(i).value=p[i]);render();}));
+function loadSaved(){try{return JSON.parse(localStorage.getItem('staging-verdict')||'[]');}catch(e){return[];}}
+function showSaved(){const s=loadSaved();$('savedList').innerHTML=s.map((x,i)=>'<li>'+x.label+' — <b>'+x.net+'</b> <button class="ghost" data-del="'+i+'">✕</button></li>').join('');document.querySelectorAll('[data-del]').forEach(b=>b.addEventListener('click',()=>{const a=loadSaved();a.splice(+b.dataset.del,1);localStorage.setItem('staging-verdict',JSON.stringify(a));showSaved();}));}
+$('saveBtn').addEventListener('click',()=>{const v=vals();const r=calc(v);const s=loadSaved();s.unshift({label:'$'+Math.round(v.price).toLocaleString()+' · '+pct(v.premium)+' premium · '+r.daysSaved+'d saved',net:fmt(r.net)});localStorage.setItem('staging-verdict',JSON.stringify(s.slice(0,8)));showSaved();});
+$('copyBtn').addEventListener('click',()=>{const v=vals();const r=calc(v);const t='The Staging Verdict — '+$('seal').textContent+': net '+(r.net>=0?'+':'')+fmt(r.net)+' on a '+fmt(v.price)+' listing. Lift after commission '+fmt(r.liftNet)+', carrying saved '+fmt(r.carrySaved)+' ('+r.daysSaved+' days), staging bill '+fmt(r.stageTotal)+'. Break-even premium '+$('bePremium').textContent+'.';navigator.clipboard&&navigator.clipboard.writeText(t);$('copyBtn').textContent='Copied ✓';setTimeout(()=>$('copyBtn').textContent='Copy summary',1400);});
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+render();showSaved();
+</script></div></body></html>
